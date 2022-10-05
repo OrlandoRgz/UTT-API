@@ -15,7 +15,7 @@ class DatosPersonalesResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'FechaNacimiento'   => $this->fechaNacimiento,
+            'FechaNacimiento'   => $this->fechaDeNacimiento,
             'edad'              => $this->edad,
             'lugarDeNacimiento' => new LugarDeNacimientoResource($this->lugarDeNacimiento),
             'genero'            => new GeneroResource($this->genero),

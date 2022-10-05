@@ -22,6 +22,6 @@ class LugarDeNacimiento extends Model
     }
 
     public function entidadFederativa(){
-        return $this->hasOne(EntidadFederativa::class, 'lugarNacimiento_id');
+        return $this->hasOne(EntidadFederativa::class, 'lugarDeNacimiento');
     }
 }

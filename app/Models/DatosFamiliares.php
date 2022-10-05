@@ -18,18 +18,18 @@ class DatosFamiliares extends Model
     }
 
     public function padre(){
-        return $this->hasOne(Padre::class, 'datosFamiliares_id');
+        return $this->hasOne(Padre::class, 'datosFamiliares');
     }
 
     public function madre(){
-        return $this->hasOne(Madre::class, 'datosFamiliares_id');
+        return $this->hasOne(Madre::class, 'datosFamiliares');
     }
 
     public function conyuge(){
-        return $this->hasOne(Conyuge::class, 'datosFamiliares_id');
+        return $this->hasOne(Conyuge::class, 'datosFamiliares');
     }
 
     public function emergencia(){
-        return $this->hasOne(Emergencia::class, 'datosFamiliares_id');
+        return $this->hasOne(Emergencia::class, 'datosFamiliares');
     }
 }

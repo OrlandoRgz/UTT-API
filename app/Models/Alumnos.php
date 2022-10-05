@@ -14,10 +14,15 @@ class Alumnos extends Model
     protected $primaryKey = 'id';
 
     public function datosPersonales(){
-        return $this->hasOne(DatosPersonales::class, 'alumno_id');
+        return $this->hasOne(DatosPersonales::class, 'alumnos');
     }
 
     public function datosFamiliares(){
-        return $this->hasOne(DatosFamiliares::class, 'alumno_id');
+        return $this->hasOne(DatosFamiliares::class, 'alumnos');
+    }
+
+    public function datosLaborales(){
+        return $this->hasOne(DatosLaborales::class, 'alumnos');
     }
 }
+

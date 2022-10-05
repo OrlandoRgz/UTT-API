@@ -15,7 +15,7 @@ class MunicipioResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id'          => $this->idMunicipio,
+            'id'          => $this->clave,
             'descripcion' => $this->descripcion
         ];
     }

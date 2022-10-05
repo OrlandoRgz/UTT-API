@@ -23,22 +23,22 @@ class DatosPersonales extends Model
     }
 
     public function lugarDeNacimiento(){
-        return $this->hasOne(LugarDeNacimiento::class, 'datosPersonales_id');
+        return $this->hasOne(LugarDeNacimiento::class, 'datosPersonales');
     }
 
     public function genero(){
-        return $this->hasOne(Genero::class, 'datosPersonales_id');
+        return $this->hasOne(Genero::class, 'datosPersonales');
     }
 
     public function estadoCivil(){
-        return $this->hasOne(EstadoCivil::class, 'datosPersonales_id');
+        return $this->hasOne(EstadoCivil::class, 'datosPersonales');
     }
 
     public function domicilio(){
-        return $this->hasOne(Domicilio::class, 'datosPersonales_id');
+        return $this->hasOne(Domicilio::class, 'datosPersonales');
     }
 
     public function contacto(){
-        return $this->hasOne(Contacto::class, 'datosPersonales_id');
+        return $this->hasOne(Contacto::class, 'datosPersonales');
     }
 }

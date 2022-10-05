@@ -15,7 +15,7 @@ class EstadoCivilResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id'          => $this->idEstadoCivil,
+            'id'          => $this->clave,
             'descripcion' => $this->descripcion
         ];
     }

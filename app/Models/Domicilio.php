@@ -24,6 +24,6 @@ class Domicilio extends Model
     }
 
     public function municipio(){
-        return $this->hasOne(Municipio::class, 'domicilio_id');
+        return $this->hasOne(Municipio::class, 'domicilio');
     }
 }

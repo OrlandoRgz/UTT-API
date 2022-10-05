@@ -16,9 +16,10 @@ class AlumnosResource extends JsonResource
     {
         return [
             'matricula'        => $this->matricula,
-            'Nombre'           => $this->nombre,
+            'Nombre'           => $this->nombreCompleto,
             'datosPersonales' => new DatosPersonalesResource($this->datosPersonales),
-            'datosFamiliares' => new DatosFamiliaresResource($this->datosFamiliares)
+            'datosFamiliares' => new DatosFamiliaresResource($this->datosFamiliares),
+            'datosLaborales'  => new DatosLaboralesResource($this->datosLaborales)
         ];
     }
 }

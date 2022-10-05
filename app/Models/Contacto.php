@@ -18,11 +18,11 @@ class Contacto extends Model
     }
 
     public function correoElectronico(){
-        return $this->hasOne(CorreoElectronico::class, 'contacto_id');
+        return $this->hasOne(CorreoElectronico::class, 'contacto');
     }
 
     public function telefono(){
-        return $this->hasOne(Telefono::class, 'contacto_id');
+        return $this->hasOne(Telefono::class, 'contacto');
     }
 
 }
