@@ -19,7 +19,10 @@ class AlumnosResource extends JsonResource
             'Nombre'           => $this->nombreCompleto,
             'datosPersonales' => new DatosPersonalesResource($this->datosPersonales),
             'datosFamiliares' => new DatosFamiliaresResource($this->datosFamiliares),
-            'datosLaborales'  => new DatosLaboralesResource($this->datosLaborales)
+            'datosLaborales'  => new DatosLaboralesResource($this->datosLaborales),
+            'datosEconomicos' => new DatosEconomicosResource($this->datosEconomicos),
+            'datosEscolares'  => new DatosEscolaresResource($this->datosEscolares),
+            'promedios'       => new PromediosResource($this->promedios)
         ];
     }
 }

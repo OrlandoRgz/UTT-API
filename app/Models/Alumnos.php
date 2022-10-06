@@ -24,5 +24,17 @@ class Alumnos extends Model
     public function datosLaborales(){
         return $this->hasOne(DatosLaborales::class, 'alumnos');
     }
+
+    public function datosEconomicos(){
+        return $this->hasOne(DatosEconomicos::class, 'alumnos');
+    }
+
+    public function datosEscolares(){
+        return $this->hasOne(DatosEscolares::class, 'alumnos');
+    }
+
+    public function promedios(){
+        return $this->hasOne(Promedios::class, 'alumnos');
+    }
 }
 

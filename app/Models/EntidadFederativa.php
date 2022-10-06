@@ -22,4 +22,8 @@ class EntidadFederativa extends Model
         return $this->belongsTo(LugarDeNacimiento::class, 'id');
     }
 
+    public function tipoBachillerato(){
+        return $this->belongsTo(TipoBachillerato::class, 'id');
+    }
+
 }
