@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AlumnosController;
+use App\Http\Controllers\API\GruposController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResource('alumnos', AlumnosController::class)->only(['index']);
 Route::get('alumnos/{matricula}',[AlumnosController::class, 'show']);
+
+Route::apiResource('grupos', GruposController::class)->only(['index']);
