@@ -15,8 +15,9 @@ class AlumnosResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'matricula'        => $this->matricula,
-            'Nombre'           => $this->nombreCompleto,
+            'matricula'       => $this->matricula,
+            'Nombre'          => $this->nombreCompleto,
+            'foto'            => $this->foto,  
             'datosPersonales' => new DatosPersonalesResource($this->datosPersonales),
             'datosFamiliares' => new DatosFamiliaresResource($this->datosFamiliares),
             'datosLaborales'  => new DatosLaboralesResource($this->datosLaborales),

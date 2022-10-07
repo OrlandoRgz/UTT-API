@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AlumnosController;
 use App\Http\Controllers\API\GruposController;
+use App\Http\Controllers\API\CatalogosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::apiResource('alumnos', AlumnosController::class)->only(['index']);
 Route::get('alumnos/{matricula}',[AlumnosController::class, 'show']);
 
 Route::apiResource('grupos', GruposController::class)->only(['index']);
+
+Route::apiResource('catalogos', CatalogosController::class)->only(['index']);

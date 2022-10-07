@@ -3,9 +3,10 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
 use App\Models\Grupo;
 use App\http\Resources\GrupoResource;
-use Illuminate\Http\Request;
 
 class GruposController extends Controller
 {
