@@ -14,27 +14,27 @@ class Alumnos extends Model
     protected $primaryKey = 'id';
 
     public function datosPersonales(){
-        return $this->hasOne(DatosPersonales::class, 'alumnos');
+        return $this->hasOne(DatosPersonales::class, 'alumno');
     }
 
     public function datosFamiliares(){
-        return $this->hasOne(DatosFamiliares::class, 'alumnos');
+        return $this->hasOne(DatosFamiliares::class, 'alumno');
     }
 
     public function datosLaborales(){
-        return $this->hasOne(DatosLaborales::class, 'alumnos');
+        return $this->hasOne(DatosLaborales::class, 'alumno');
     }
 
     public function datosEconomicos(){
-        return $this->hasOne(DatosEconomicos::class, 'alumnos');
+        return $this->hasOne(DatosEconomicos::class, 'alumno');
     }
 
     public function datosEscolares(){
-        return $this->hasOne(DatosEscolares::class, 'alumnos');
+        return $this->hasOne(DatosEscolares::class, 'alumno');
     }
 
     public function promedios(){
-        return $this->hasOne(Promedios::class, 'alumnos');
+        return $this->hasOne(Promedios::class, 'alumno');
     }
 }
 
